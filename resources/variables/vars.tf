@@ -16,3 +16,13 @@ variable "first_fruits"{
 output "first_fruit_is" {
     value = var.fruits[0]
 }
+variable "fruits_list"{
+    default={
+        apple=1
+        mango=2
+        banana=3
+    }
+ }
+ output "fruits_list_with_apple_quantity"{
+    value=var.fruits_list${fruits_list["apple"]}
+ }
