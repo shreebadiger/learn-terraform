@@ -9,6 +9,6 @@ output "sample1"{
 variable "fruits"{
     default = ["apple","mango"]
 }
- output "list of fruits" {
+ output "list_of_fruits" {
     value = var.fruits
  }
