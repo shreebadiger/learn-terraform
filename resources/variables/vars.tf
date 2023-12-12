@@ -10,7 +10,7 @@ variable "fruits"{
  output "list_of_fruits"{
     value = var.fruits
 }
-variable "fruits"{
+variable "first_fruits"{
     default=["apple","mango"]
 }
 output "first_fruit_is" {
