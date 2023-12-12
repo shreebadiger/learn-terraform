@@ -8,7 +8,7 @@ resource "aws_instance" "frontend"{
 }
 
 resource "aws_route53_record" "frontend" {
-  zone_id = Z043769343BOX5323WQF
+  zone_id = "Z043769343BOX5323WQF"
   name    = "frontend-dev"
   type    = "A"
   ttl     = 30
@@ -25,7 +25,7 @@ resource "aws_instance" "backend"{
 }
 
 resource "aws_route53_record" "backend" {
-  zone_id = Z043769343BOX5323WQF
+  zone_id = "Z043769343BOX5323WQF"
   name    = "backend-dev"
   type    = "A"
   ttl     = 30
@@ -42,7 +42,7 @@ resource "aws_instance" "mysql"{
 }
 
 resource "aws_route53_record" "mysql" {
-  zone_id = Z043769343BOX5323WQF
+  zone_id = "Z043769343BOX5323WQF"
   name    = "mysql-dev"
   type    = "A"
   ttl     = 30
