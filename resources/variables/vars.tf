@@ -1,5 +1,5 @@
 variable "sample1" {
-    defualt = "hello"
+    default = "hello"
 } 
 
 output "sample1"{
