@@ -24,5 +24,5 @@ variable "fruits_list"{
     }
  }
  output "fruits_list_with_apple_quantity"{
-    value=fruits_list_with_apple_quantity${var.fruits_list["apple"]}
+    value="fruits list with apple quantity${var.fruits_list["apple"]}"
  }
