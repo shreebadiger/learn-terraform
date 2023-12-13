@@ -35,3 +35,8 @@ variable "fruits_with_quantity"{
     value = var.test1
  }
 
+ variable "env" {}
+ output "env" {
+    value = var.env
+ }
+
