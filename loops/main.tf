@@ -5,7 +5,7 @@ resource "null_resource" "sample"{
     count = length(var.instances)
 }
 
-variable "instances1" "sample1" {
+variable "instances1" {
     default = {
         frontend = {
             Name = "frontend"
