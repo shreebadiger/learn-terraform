@@ -29,3 +29,9 @@ variable "fruits_with_quantity"{
  output "fruits_apple_quantity_with_name"{
     value="fruits list with apple quantity ${var.fruits_with_quantity["apple"]}"
  }
+
+ variable "test1" {}
+ output "test1"{
+    value = var.test1
+ }
+
