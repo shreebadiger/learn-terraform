@@ -6,6 +6,13 @@ terraform {
   }
 }
 
+variable "parameters" {
+    default = [
+        { name = "dev.rds.username", type = "string", value = "admin1"},
+        { name = "dev.rds.password", type = "securestring", value = "ExpenseApp123"}
+    ]
+}
+
 resource "aws_ssm_parameter" "parameter" {
   count = length(var.parameters)
   name  = var.parameters[count.index].name
